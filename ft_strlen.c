@@ -6,10 +6,11 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 10:22:31 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/20 11:14:53 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/05/20 13:45:07 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
 size_t	strlen(const char *s)
 {
