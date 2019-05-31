@@ -6,11 +6,11 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 11:43:21 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/21 14:08:48 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/05/31 11:25:19 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {
