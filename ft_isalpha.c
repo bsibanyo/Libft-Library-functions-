@@ -6,11 +6,11 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:50:08 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/27 10:14:03 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/05/31 11:17:12 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {
