@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/30 17:01:05 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/03 15:06:29 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,21 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-
-int		ft_atoi(const char *str);
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-void		ft_puchar(char c);
-char	*ft_strcat(char *s1, const char *s2);
-char    *ft_strchr(const char *s, int c);
-int		ft_strcmp(const char *s1, const char *s2);
-char	*ft_strcpy(char *dst, const char *src);
-size_t	strlen(const char *s);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strncpy(char *dst, const char *src, size_t len);
-int		ft_tolower(int c);
-int		ft_toupper(int c);
+int					ft_atoi(const char *str);
+int					ft_isalnum(int c);
+int					ft_isalpha(int c);
+int					ft_isascii(int c);
+int					ft_isdigit(int c);
+int					ft_isprint(int c);
+void				ft_puchar(char c);
+char				*ft_strcat(char *s1, const char *s2);
+char				*ft_strchr(const char *s, int c);
+int					ft_strcmp(const char *s1, const char *s2);
+char				*ft_strcpy(char *dst, const char *src);
+size_t				strlen(const char *s);
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
+char				*ft_strncpy(char *dst, const char *src, size_t len);
+int					ft_tolower(int c);
+intq				ft_toupper(int c);
 
 #endif
