@@ -5,40 +5,36 @@
 #                                                     +:+ +:+         +:+      #
 #    By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/05/30 16:14:39 by bsibanyo          #+#    #+#              #
-#    Updated: 2019/05/30 16:46:19 by bsibanyo         ###   ########.fr        #
+#    Created: 2019/06/03 15:24:05 by bsibanyo          #+#    #+#              #
+#    Updated: 2019/06/03 17:05:00 by bsibanyo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Werror -Wextra -c
-
 NAME = libft.a
 
-SOURCES = ./ft_isalpha.c	./ft_putchar.c	./ft_strcpy.c	./ft_tolower.c
-./ft_isascii.c	./ft_strcat.c	./ft_strlen.c	./ft_toupper.c
-./ft_atoi.c	./ft_isdigit.c	./ft_strchr.c	./ft_strncmp.c
-./ft_isalnum.c	./ft_isprint.c	./ft_strcmp.c	./ft_strncpy.c
+FLAGS = -Wall -Werror -Wextra -c
 
-OBJECTS = $(SOURCES:.c=.o)
+SRCS = ./ft_isalnum.c ./ft_isascii.c ./ft_isprint.c ./ft_putchar.c \
+      ./ft_strcpy.c ./ft_tolower.c ./ft_isalpha.c ./ft_strncmp.c\
+      ./ft_isdigit.c ./ft_strlen.c ./ft_toupper.c \
+       ./ft_strchr.c ./ft_strcat.c ./ft_strcmp.c ./ft_atoi.c ./ft_strncpy.c\
 
-default: all
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
-	ar -rcs $(NAME) $(OBJECTS)
-	echo "Libft.a created!"
-	ranlib $(NAME)
-	echo "Libft.a indexed!"
 
-$(NAME): $(SOURCES)
-	gcc $(FLAGS) $(SOURCES)
-	echo "Sources compiled!"
+
+$(NAME):
+	gcc $(FLAGS) $(SRCS)
+	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: clean fclean all re
