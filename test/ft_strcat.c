@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 11:40:53 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/31 11:41:00 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/04 15:36:40 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ char	*ft_strcat(char *s1, const char *s2)
 
 int		main(void)
 {
-	char name1[20] = "This is ";
-	const char name2[20] = "me";
+	char a[20] = "This is ";
+	const char b[20] = "me";
 
-	ft_strcat(name1, name2);
+	ft_strcat(a, b);
 
-	printf("%s", name1);
+	printf("%s", a);
 	return (0);
 }
