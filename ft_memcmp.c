@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:59:34 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 15:32:48 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 17:25:56 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if (str1[i] != str2[i])
 		{
-			return ((int)str1[i] - (int)str2[i]);
-			i++;
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 		}
+		i++;
 	}
 	return (0);
 }
