@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 17:19:03 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/04 17:19:34 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 08:17:42 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,15 @@ int		main()
 	d = ft_strcmp(a,b);
 	if(d == 0)
 	{
-		printf("%s is equal to %s", a, b);
+		printf("a:%s is equal to b:%s", a, b);
 	}
 	else if(d > 0)
 	{
-		printf("%s is greater than %s", a,b);
+		printf("a:%s is greater than b:%s", a,b);
 	}
 	else if(d < 0)
 	{
-		printf("%s is less than %s", a,b);
+		printf("a:%s is less than b:%s", a,b);
 	}
 	return(0);
 
