@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 17:00:48 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 17:39:35 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int					ft_isdigit(int c);
 int					ft_isprint(int c);
 void				ft_putchar(char c);
 char				*ft_strcat(char *s1, const char *s2);
+char				*ft_strncat(char *s1, const char *s2, size_t n)
 char				*ft_strchr(const char *s, int c);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dst, const char *src);
