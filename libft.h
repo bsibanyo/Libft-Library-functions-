@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 16:53:50 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 16:57:52 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,6 @@ void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memset(void *b, int c, size_t n);
-void				ft_puchar(char c);
+int					ft_puchar(int c);
 
 #endif
