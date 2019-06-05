@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:31:22 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 16:46:49 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 17:22:08 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		if ((unsigned char)s[i] == (unsigned char)c)
 		{
 			return ((char*)dst + i + 1);
-			i++;
 		}
+		i++;
 	}
 	return (NULL);
 }
