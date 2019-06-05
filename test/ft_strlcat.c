@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 14:58:51 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 15:01:05 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:25:54 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int		main()
 
 	char a[50] = "hello";
 	const char b[50] = "bye";
-	ft_strlcat(a,b,7);
+	ft_strlcat(a,b,8);
 	printf("%s",a);
 	return(0);
 }
