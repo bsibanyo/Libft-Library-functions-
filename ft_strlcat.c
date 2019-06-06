@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 13:46:25 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 16:40:44 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/06 09:18:23 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	while(dst[i] != '\0')
+	while (dst[i] != '\0')
 	{
 		i++;
 	}
-	while(src[j] != '\0' && (j > dstsize))
+	while (src[j] != '\0' && (j > dstsize))
 	{
-		if(dst[i] == '\0')
+		if (dst[i] == '\0')
 		{
 			ft_putchar(src[j]);
 		}
@@ -34,5 +34,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		j++;
 	}
 	dst[i] = src[j];
-	return(*dst);
+	return (*dst);
 }
