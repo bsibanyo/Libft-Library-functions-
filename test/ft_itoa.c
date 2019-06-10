@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/29 10:45:20 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 08:46:26 by bsibanyo         ###   ########.fr       */
+/*   Created: 2019/06/10 08:45:18 by bsibanyo          #+#    #+#             */
+/*   Updated: 2019/06/10 14:47:23 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "unistd.h"
 
-int		ft_atoi(const char *str)
+int		ft_itoa(const char *str)
 {
 	int		sign;
 	int		result;
@@ -34,8 +36,16 @@ int		ft_atoi(const char *str)
 	}
 	while (str[i] != '\0')
 	{
-		result = (result * 10) + (str[i] - '0');
+		result = result / 10 - str[i] + '0';
 		i++;
 	}
 	return (sign * result);
+}
+
+int        main(void)
+{
+   char num[20] = "-12";
+
+   printf("%d", ft_itoa(num));
+   return (0);
 }
