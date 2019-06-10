@@ -6,14 +6,14 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:02:13 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 16:04:24 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:45:21 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memdel(void **ptr)
+void	ft_memdel(void **ap)
 {
-	free(*ptr);
-	*ptr = NULL;
+	free(*ap);
+	*ap = NULL;
 }
