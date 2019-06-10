@@ -6,13 +6,13 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:02:54 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 16:18:36 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:48:41 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strdel(char **a)
+void	ft_strdel(char **as)
 {
-	ft_memdel((void **)a);
+	ft_memdel((void **)as);
 }
