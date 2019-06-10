@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/06 17:35:55 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:52:28 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,17 @@ void				*ft_memset(void *b, int c, size_t n);
 void				ft_puchar(char c);
 char				*ft_strdup(const char *s1);
 void				ft_bzero(void *s, size_t n);
-void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
+void				*ft_memalloc(size_t size);
+void				ft_memdel(void **ap);
+char				*ft_strnew(size_t size);
+void				ft_strdel(char **as);
+void				ft_strclr(char *s);
+void				ft_striter(char *s, void (*f)(char*));
 
 
 #endif
