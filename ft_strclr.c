@@ -6,18 +6,18 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:03:10 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 16:21:59 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:50:08 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strclr(char *str)
+void	ft_strclr(char *s)
 {
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		str[i] = '\0';
+		s[i] = '\0';
 		i++;
 	}
 }
