@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:02:40 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 16:44:20 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:57:56 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	*ft_memalloc(size_t size)
 {
+	void	*mem;
 	mem = malloc(size);
 	if (mem == NULL)
 	{
