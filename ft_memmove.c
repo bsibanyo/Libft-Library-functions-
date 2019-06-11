@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 14:21:29 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 09:26:19 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/11 10:43:13 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (NULL);
 	ft_memcpy(dst, src, len);
 	ft_memcpy(dst, ptr, len);
+	free(ptr);
 	return (dst);
 }
