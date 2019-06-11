@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 11:37:53 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/11 14:46:06 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,6 @@ void				*ft_memmove(void *dst, const void *src, size_t len);
 char				*ft_strmap(char const *s, char (*f)(char));
 int					ft_strequ(char const *s1, char const *s2);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_putnbr(int n);
 
 #endif
