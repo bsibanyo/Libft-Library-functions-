@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 09:33:30 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/11 09:38:50 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);
 void				ft_strdel(char **as);
 void				ft_strclr(char *s);
-void				ft_striter(char *s, void (*f)(char*));
 void				ft_striter(char *s, void (*f)(char*));
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				ft_striter(char *s, void (*f)(char*));
