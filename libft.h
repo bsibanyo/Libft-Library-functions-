@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 14:51:34 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:06:52 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,7 @@ int					ft_strequ(char const *s1, char const *s2);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr(int n);
 void				ft_putstr(const char *s);
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int					ft_strnequ(char const *s1, char const *s2, size_t n);
 
 #endif
