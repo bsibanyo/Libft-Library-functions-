@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 16:41:05 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/05 14:57:34 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/12 11:05:23 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 			j++;
 			i++;
 	}
+	s[i] = '\0';
 	return(s1);
 }
 
