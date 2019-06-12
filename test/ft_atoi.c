@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:11:00 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/31 10:11:21 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:47:42 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int        ft_atoi(const char *str)
             i++;
         }
     }
-      while(str[i] != '\0')
+      while(str[i] >= '0' && str[i] <= '9')
    {
        result = result * 10 + str[i] - '0';
        i++;
