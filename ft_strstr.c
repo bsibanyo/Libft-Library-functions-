@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:49:51 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/12 17:42:24 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/12 17:45:53 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ char	*ft_strstr(const char *s1, const char *s2)
 	unsigned int	k;
 
 	i = 0;
+	k = 0;
 	if (s1[0] == '\0' && s2[0] == '\0')
 	{
 		return ((char *)s1);
