@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/12 17:44:08 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/12 17:50:07 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,6 @@ char				*ft_strjoin(char const *s1, char const *s2);
 int					ft_itoa(const char *str);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
+char				*ft_strnstr(const char *s1, const char *s2, size_t n);
 
 #endif
