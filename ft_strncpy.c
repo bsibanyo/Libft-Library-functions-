@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:52:59 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/31 11:26:43 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:58:09 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
+	while (len > i)
+	{
+		dst[i] = '\0';
+		i++;
+	}
 	return (dst);
 }
