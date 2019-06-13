@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:49:23 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/12 17:36:54 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 13:10:11 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,15 @@ char	*ft_strrchr(const char *s, int c)
 {
 	char	*str;
 
-	str = 0;
+	str = (0);
 	while (*s)
 	{
 		if (*s == c)
-		{
 			str = (char *)s;
-			++s;
-		}
+		++s;
 	}
 	if (str)
-	{
 		return (str);
-	}
 	if (c == '\0')
 	{
 		return ((char *)s);
