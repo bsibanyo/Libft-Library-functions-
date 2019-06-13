@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 16:38:04 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 14:55:36 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 14:54:40 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	if (!s)
+		return (NULL);
 	unsigned int		i;
 	char				*str;
 
