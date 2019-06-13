@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:29:18 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 08:12:19 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 16:29:33 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	d = (char*)dst;
 	s = (char*)src;
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	while (i < n)
 	{
 		d[i] = s[i];
