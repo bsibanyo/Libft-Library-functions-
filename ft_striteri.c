@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 16:37:31 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/11 09:51:31 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 14:37:50 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
+	if(!s)
+		return ;
 	unsigned int	i;
 
 	i = 0;
