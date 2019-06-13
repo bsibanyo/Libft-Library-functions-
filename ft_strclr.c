@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:03:10 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/13 14:31:07 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 14:51:52 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_strclr(char *s)
 {
-	if(!s)
+	if (!s)
 		return ;
 	unsigned int		i;
 
