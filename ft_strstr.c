@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:49:51 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/13 11:59:45 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/13 12:05:01 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_strstr(const char *s1, const char *s2)
 	unsigned int	j;
 
 	i = 0;
-	if (s1[0] == '\0' && s2[0] == '\0')
+	j = 0;
+	if (s1[i] == '\0' && s2[j] == '\0')
 	{
 		return ((char *)s1);
 	}
@@ -26,9 +27,13 @@ char	*ft_strstr(const char *s1, const char *s2)
 	{
 		j = 0;
 		while (s2[j] != '\0' && s1[i + j] == s2[j])
+		{
 			j++;
+		}
 		if (s2[j] == '\0')
+		{
 			return ((char *)s1 + i);
+		}
 		i++;
 	}
 	return (NULL);
