@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/12 17:50:07 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:36:34 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ typedef struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+char				ft_whitespace(char c);
+char				*ft_strtrim(char const *s);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -75,5 +77,6 @@ int					ft_itoa(const char *str);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strnstr(const char *s1, const char *s2, size_t n);
+void				ft_whitespace(char c);
 
 #endif
