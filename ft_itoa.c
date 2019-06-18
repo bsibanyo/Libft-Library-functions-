@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:35:49 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/18 15:44:01 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/18 15:47:59 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,33 @@
 
 static size_t		get_num_len(int n)
 {
-	size_t			len;
+	size_t			length;
 
-	len = 1;
+	length = 1;
 	while (n /= 10)
-		len++;
-	return (len);
+		length++;
+	return (length);
 }
 
 char				*ft_itoa(int n)
 {
-	char			*s;
-	size_t			len;
+	char			*str;
+	size_t			length;
 	unsigned int	number;
 
-	len = get_num_len(n);
+	length = get_num_len(n);
 	number = n;
 	if (n < 0)
 	{
 		number = -n;
-		len++;
+		length++;
 	}
-	if (!(s = ft_strnew(len)))
+	if (!(str = ft_strnew(length)))
 		return (NULL);
-	s[--len] = number % 10 + '0';
+	str[--length] = number % 10 + '0';
 	while (number /= 10)
-		s[--len] = number % 10 + '0';
+		str[--length] = number % 10 + '0';
 	if (n < 0)
-		*(s + 0) = '-';
-	return (s);
+		*(str + 0) = '-';
+	return (str);
 }
