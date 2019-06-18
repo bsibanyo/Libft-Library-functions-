@@ -6,13 +6,13 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 14:51:42 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/14 15:33:12 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:40:06 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_whitespace(char c)
+char	ft_whitespace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n');
 }
