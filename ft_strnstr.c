@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:50:49 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/14 12:12:07 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/20 08:40:12 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-	size_t	j;
-	char *p1;
+	size_t		i;
+	size_t		j;
+	char		*p1;
 
 	i = 0;
 	p1 = (char *)s1;
