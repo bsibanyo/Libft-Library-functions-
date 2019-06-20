@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:02:29 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 09:13:37 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/20 15:02:13 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 char	*ft_strnew(size_t size)
 {
-	if (!size)
-		return (NULL);
 	return ((char *)ft_memalloc(size + 1));
 }
