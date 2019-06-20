@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:35:20 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 08:42:05 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/20 08:56:05 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 char	**ft_strsplit(const char *s, char c)
 {
 	unsigned int	start;
-	unsigned int	finish;
+	unsigned int	end;
 	unsigned int	i;
-	unsigned int	wc;
+	unsigned int	wordcount;
 	char			**table;
 
-	wc = 0;
+	wordcount = 0;
 	table = NULL;
 	i = 0;
 	if (s && ((table = (char **)malloc(sizeof(*table) * ft_strlen(s)))))
@@ -29,14 +29,14 @@ char	**ft_strsplit(const char *s, char c)
 		{
 			while (s[i] == c && s[i])
 				i++;
-			start = 0;
+			start = i;
 			while (s[i] != c && s[i])
 				i++;
-			finish = 0;
-			if ((finish - start) > 0)
-				table[wc++] = ft_strsub(s, start, finish - start);
+			end = i;
+			if ((end - start) > 0)
+				table[wordcount++] = ft_strsub(s, start, end - start);
 		}
-		table[wc] = 0;
+		table[wordcount] = 0;
 	}
 	return (table);
 }
