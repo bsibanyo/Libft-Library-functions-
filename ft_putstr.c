@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 11:48:54 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/13 15:18:17 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/20 08:30:39 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putstr(const char *s)
 {
+	int		i;
+
 	if (!s)
 		return ;
-	int i;
-
 	i = 0;
 	while (s[i] != '\0')
 	{
