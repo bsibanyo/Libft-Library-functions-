@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 10:43:34 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 11:09:10 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/20 11:18:54 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ int	main()
 	strcpy(str, "bruce live");
 	ft_memset(str, 'b', 5);
 	printf("%s", str);
+	return (0);
 }
