@@ -1,45 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/20 11:45:21 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 13:51:34 by bsibanyo         ###   ########.fr       */
+/*   Created: 2019/06/20 11:59:23 by bsibanyo          #+#    #+#             */
+/*   Updated: 2019/06/20 12:03:28 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "string.h"
 #include "stdio.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	i;
 	char	*d;
 	char	*s;
+	size_t	i;
 
 	i = 0;
 	d = (char*)dst;
 	s = (char*)src;
-	while (i < n)
+	if (!d && !s)
+		return (NULL);
+	if (s < d)
+		while (++i <= len)
+			d[len - i] = s[len - i];
+	else
 	{
-		d[i] = s[i];
-		if ((unsigned char)s[i] == (unsigned char)c)
+		while (len-- > 0)
 		{
-			return ((char*)dst + i + 1);
+			*(d++) = *(s++);
 		}
-		i++;
 	}
-	return (NULL);
+	return (dst);
 }
 
-int	main()
+int		main()
 {
-	char dst[50];
-	char src[50] = "wait";
+	char dst[50] = "Hello";
+	char src[50] = "world";
 
-	ft_memccpy(dst,src, 'a', 7);
+	ft_memmove(dst, src, 7);
 	printf("%s", dst);
 	return (0);
 }
