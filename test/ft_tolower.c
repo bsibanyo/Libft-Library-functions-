@@ -6,17 +6,13 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 10:06:21 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/28 10:42:01 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/22 01:09:49 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
 #include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+#include "stdio.h"
 
 int		ft_tolower(int c)
 {
@@ -27,11 +23,17 @@ int		ft_tolower(int c)
 	return (c);
 }
 
-int		main(int argc, char **argv)
+int		main(void)
 {
-	int		a;
+	char str[] = "HELLO";
+	char c;
+	int	i;
 
-	a = ft_tolower(argv[1][0]);
-	ft_putchar(a);
-	return (0);
+	i = 0;
+	while(str[i])
+	{
+		c = str[i];
+		printf("%c", ft_tolower(c));
+		i++;
+	}
 }
