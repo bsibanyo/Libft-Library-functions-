@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/20 16:26:32 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 16:26:35 by bsibanyo         ###   ########.fr       */
+/*   Created: 2019/06/11 16:34:51 by bsibanyo          #+#    #+#             */
+/*   Updated: 2019/06/21 23:54:17 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,19 +30,16 @@ char	*ft_strtrim(char const *s)
 	return (ft_strsub(s, start, finish - start));
 }
 
-int main(void)
+int	main()
 {
-	char *c;
 	char *a;
 
-	a = "      WeThinkCode    ";
-	ft_putstr(a);
-	ft_putchar('\n');
-	c = ft_strtrim(a);
-	while(*(c) != '\0')
+	a = ft_strtrim("    WeThinkCode    ");
+	while(a)
 	{
-		ft_putstr(c);
+		ft_putstr(a);
 		ft_putchar('\n');
+		break;
 	}
 	return (0);
 }
