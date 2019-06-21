@@ -5,18 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 10:54:21 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/05/28 10:57:55 by bsibanyo         ###   ########.fr       */
+/*   Created: 2019/05/20 15:56:59 by bsibanyo          #+#    #+#             */
+/*   Updated: 2019/06/22 01:02:34 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+#include "stdio.h"
+#include "unistd.h"
+#include "ctype.h"
 
 int		ft_toupper(int c)
 {
@@ -27,11 +23,17 @@ int		ft_toupper(int c)
 	return (c);
 }
 
-int		main(int argc, char **argv)
+int	main()
 {
-	int		a;
+	int	i = 0;
+	char c;
+	char str[] = "hello";
 
-	a = ft_toupper(argv[1][0]);
-	ft_putchar(a);
-	return (0);
+	while (str[i])
+	{
+		c = str[i];
+		printf("%c",ft_toupper(c));
+		i++;
+	}
 }
+
