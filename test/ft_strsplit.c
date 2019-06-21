@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:25:00 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/20 16:25:15 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2019/06/21 22:52:26 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,9 @@ int main(void)
 	a = ft_strsplit("***we*think**code***", '*');
 	while (*a)
 	{
-		ft_putstr(*(a++));
+		ft_putstr(*a);
 		ft_putchar(' ');
+		a++;
 	}
 	ft_putchar('\n');
 	return (0);
