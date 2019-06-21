@@ -5,47 +5,48 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/10 08:45:18 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/10 14:47:23 by bsibanyo         ###   ########.fr       */
+/*   Created: 2019/06/11 16:35:49 by bsibanyo          #+#    #+#             */
+/*   Updated: 2019/06/21 16:04:25 by bsibanyo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
-#include "stdlib.h"
-#include "unistd.h"
+#include "libft.h"
 
-int		ft_itoa(const char *str)
+static size_t		get_num_len(int n)
 {
-	int		sign;
-	int		result;
-	int		i;
+	size_t			length;
 
-	i = 0;
-	result = 0;
-	sign = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' \
-		|| str[i] == '\n' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-		{
-			sign = -1;
-			i++;
-		}
-	}
-	while (str[i] != '\0')
-	{
-		result = result / 10 - str[i] + '0';
-		i++;
-	}
-	return (sign * result);
+	length = 1;
+	while (n /= 10)
+		length++;
+	return (length);
 }
 
-int        main(void)
+char				*ft_itoa(int n)
 {
-   char num[20] = "-12";
+	char			*str;
+	size_t			length;
+	unsigned int	number;
 
-   printf("%d", ft_itoa(num));
-   return (0);
+	length = get_num_len(n);
+	number = n;
+	if (n < 0)
+	{
+		number = -n;
+		length++;
+	}
+	if (!(str = ft_strnew(length)))
+		return (NULL);
+	str[--length] = number % 10 + '0';
+	while (number /= 10)
+		str[--length] = number % 10 + '0';
+	if (n < 0)
+		*(str + 0) = '-';
+	return (str);
+}
+
+int	main()
+{
+	printf("%s", ft_itoa(12));
+	return (0);
 }
